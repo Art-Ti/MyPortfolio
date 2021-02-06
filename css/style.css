@@ -1,0 +1,170 @@
+*{
+    /* font-family: anton; */
+    font-family: opensans-bold, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0e0e0e;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header{
+    background: url('../img/03.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.menu__list{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 10px 0 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.menu__list-item{
+    padding: 0 20px;
+}
+.menu__list-link:hover{
+    color: rgb(22, 109, 167);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+}
+.title h3{
+    font-size: 30px;
+}
+.title h1{
+    font-size: 80px;
+    font-family: anton;
+    letter-spacing: 5px;
+}
+.title h4{
+    font: bold italic 110% serif;
+    font-size: 30px;
+}
+.container {
+    max-width: 1230px;
+    margin: 0px auto 0;
+    padding: 40px 0px;
+}
+.about{
+    display: block;
+    background: rgb(0, 0, 0);
+    color: rgb(188, 188, 218);
+}
+.about__me{
+    display: flex;
+    margin: 0 30px;
+}
+.about__info h2{
+    width: 150px;
+}
+.resume{
+    border-radius: 50px;
+}
+.skills__info{
+   margin: 0 30px;
+}
+.skills li{
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.skills li:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54, 126, 223, .5);
+    border-radius: 1000px;
+}
+.skills li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.skills li.html:after {
+    animation-name: html;
+}
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+.skills li.css:after {
+    animation-name: css;
+}
+@keyframes css {
+    to {
+        width: 80%;
+    }
+}
+.skills li.js:after {
+    animation-name: js;
+}
+@keyframes js {
+    to {
+        width: 65%;
+    }
+}
+.skills li.react:after {
+    animation-name: react;
+}
+@keyframes react {
+    to {
+        width: 50%;
+    }
+}
+.footer{
+    max-width: 1230px;
+    margin: 0px auto 0;
+    padding: 30px 0px 10px;
+}  
+.social__links{
+    display: flex;
+    justify-content: center;
+} 
+.social__links ul{
+    display: flex;
+}
+.social__item{
+    list-style: none;
+}
+.social__item:hover{
+    color: rgb(22, 109, 167);
+}
+.social__item a{
+    padding: 20px 20px;
+    font-size: 30px;
+}
+.footer__text{
+    padding:  10px 30px;
+    font-size: 15px;
+    text-align: center;
+}
+.footer__text span{
+    color: red;
+}
