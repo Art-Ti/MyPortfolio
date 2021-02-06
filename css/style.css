@@ -76,6 +76,9 @@ a{
 .skills__info{
    margin: 0 30px;
 }
+.skills__info h2{
+    text-align: center;
+}
 .skills li{
     position: relative;
     list-style: none;
@@ -167,4 +170,9 @@ a{
 }
 .footer__text span{
     color: red;
+}
+.contact{
+    display: flex;
+    text-align: center;
+    padding: 100px 0;
 }
