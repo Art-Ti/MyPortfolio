@@ -6,7 +6,8 @@
     padding: 0;
 }
 body{
-    background-color: #0e0e0e;
+    background: rgb(0, 0, 0);
+    /* background-color: #0e0e0e; */
     color: white;
 }
 a{
@@ -55,13 +56,15 @@ a{
 }
 .container {
     max-width: 1230px;
+    width: 100%;
     margin: 0px auto 0;
     padding: 40px 0px;
 }
 .about{
     display: block;
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
     color: rgb(188, 188, 218);
+    padding: 100px 0;
 }
 .about__me{
     display: flex;
@@ -72,6 +75,9 @@ a{
 }
 .resume{
     border-radius: 50px;
+}
+.skills{
+    padding: 100px 0;
 }
 .skills__info{
    margin: 0 30px;
@@ -175,4 +181,50 @@ a{
     display: flex;
     text-align: center;
     padding: 100px 0;
+}
+.contact__title{
+    font-weight: 800;
+    font-size: 39px;
+    padding: 0 0 30px;
+}
+.contact__line{
+    background: rgba(135, 135, 135, 0.5);
+    width: 100px;
+    height: 1px;
+    margin: 30px auto;
+}
+/* .contact__subtitle{
+    font-family: Raleway, "Times New Roman", Times, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    padding: 30px 0;
+} */
+.contact__input{
+    display: block;
+    width: 50%;
+    padding: 10px 15px;
+    margin: 20px auto 15px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px
+}
+.contact__textarea{
+    display: block;
+    width: 50%;
+    padding: 10px 15px;
+    margin: 20px auto 15px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px
+}
+.contact__btn{
+    display: block;
+    width: 50%;
+    padding: 10px 15px;
+    margin: 20px auto 15px;
+    font-size: 14px;
+    background: rgba(17, 17, 17, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
