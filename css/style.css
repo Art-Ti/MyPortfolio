@@ -29,16 +29,18 @@ html {
 	background-color: black;
 	left: 0;
 	top: 0;
-	padding: 1rem 5rem;
+	padding: 16px 80px;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 .logo a {
-	font-family: 'Flash Back - Demo', sans-serif;
-	font-size: 3rem;
+	/* font-family: 'Flash Back - Demo', sans-serif; */
+	font-family: cursive;
+	font-size: 30px;
 	color: white;
+	text-decoration: none;
 }
 .nav-list {
 	display: flex;
@@ -99,7 +101,7 @@ html {
 	top: 0;
 	left: 0;
 	background-color: rgb(46, 45, 45);
-	padding: 5rem 0;
+	padding: 80px 0;
 	transform: translateY(-100%);
 	transition: .3s ease transform;
 	text-align: center;
@@ -116,8 +118,8 @@ html {
 .nav-list ul li:after {
 	content: '';
 	position: absolute;
-	width: 5rem;
-	height: .2rem;
+	width: 80px;
+	height: .32px;
 	background-color: white;
 	left: 50%;
 	transform: translateX(-50%) scale(0);
@@ -125,13 +127,13 @@ html {
 	transition: .3s ease transform;
 }
 .nav-list ul li a {
-	font-size: 1.8rem;
+	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
 	display: block;
-	letter-spacing: .15rem;
-	padding: 2rem 3rem;
+	letter-spacing: .240px;
+	padding: 20px 40px;
 }
 .nav-list.open ul {
 	transform: translateY(90px);
@@ -155,31 +157,31 @@ html {
 	text-align: center;
 }
 .hero-info h1 {
-	font-size: 5rem;
+	font-size: 50px;
 	font-weight: 500;
 	color: whitesmoke;
 }
 .hero-info p {
-	font-size: 1.6rem;
+	font-size: 25px;
 	text-transform: uppercase;
-	letter-spacing: .5rem;
+	letter-spacing: .50px;
 	color: whitesmoke;
 }
 .hero-info-button {
 	margin-top: 30px;
-	padding: 2rem 5rem;
+	padding: 20px 60px;
 	display: inline-block;
-	font-size: 1.6rem;
+	font-size: 15px;
 	text-transform: uppercase;
 	color: white;
 	text-decoration: none;
-	letter-spacing: .6rem;
+	letter-spacing: 10px;
 	background-color: rgba(85, 85, 85, 0.534);
 }
 .hero-img {
 	height: auto;
 	width: 80%;
-	margin-bottom: 3rem;
+	margin-bottom: 40px;
 }
 .hero-img img {
 	height: 100%;
@@ -187,86 +189,25 @@ html {
 }
 /* End Hero Section */
 
-/* About Section  */
-/* .about {
-	width: 100%;
-	min-height: 50vh;
-	padding: 10rem 5rem;
-	flex-direction: column;
-}
-.about .about-info {
-	text-align: center;
-}
-.about .about-info .about-info-heading {
-	font-size: 4rem;
-	text-transform: uppercase;
-	letter-spacing: .3rem;
-	color: black;
-}
-.about .about-info .about-info-desc {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	margin-top: 10px;
-}
-.about .about-info .about-info-button {
-	padding: 1.6rem 2.6rem;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.548);
-	color: whitesmoke;
-	text-decoration: none;
-	font-size: 1.6rem;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.about .about-img {
-	margin-top: 50px;
-	display: block;
-}
-.about .about-img .about-img-wrapper {
-	margin-top: 50px;
-	height: auto;
-	max-width: 400px;
-	position: relative;
-	display: inline-block;
-}
-.about .about-img .about-img-wrapper img {
-	height: 100%;
-	width: 100%;
-}
-.about .about-img .about-img-wrapper::after {
-	position: absolute;
-	content: '';
-	right: -5rem;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 70%;
-	height: 120%;
-	background-color: rgba(34, 33, 33, 0.158);
-	z-index: -1;
-} */
-/* End About Section  */
-
 /* Projects section  */
 .Projects {
 	flex-direction: column;
 	min-height: 60vh;
-	padding: 10rem 5rem;
+	padding: 150px 50px ;
 }
 .Projects-header {
 	width: 100%;
 	text-align: center;
 }
  .Projects-header h1 {
-	font-size: 4rem;
+	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: black;
 }
 .Projects-header p {
-	font-size: 1.3rem;
-	line-height: 2rem;
+	font-size: 13px;
+	line-height: 20px;
 	margin-top: 20px;
 }
 .Projects-info {
@@ -311,20 +252,20 @@ html {
 	transform: rotateY(180deg);
 }
 .Project-front i {
-	font-size: 4rem;
+	font-size: 50px;
 	color: black;
 	margin-bottom: 10px;
 }
 .Project-front h1,
 .Project-back p {
-	font-size: 2.5rem;
+	font-size: 20px;
 	text-transform: capitalize;
 }
 .Project:hover .Project-card {
 	transform: rotateY(180deg);
 }
 .Project-back p {
-	font-size: 1.3rem;
+	font-size: 20px;
 	margin-top: 10px;
 	text-align: center;
 }
@@ -349,35 +290,57 @@ html {
 } */
 /* End Projects section  */
 
-/* Hire Section  */
-.hire {
-	min-height: 10vh;
-	flex-direction: column;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.212);
-	padding: 3rem 2rem;
-}
-.hire .hire-heading {
-	color: black;
-	font-size: 2.2rem;
+/* Skills section */
+.skills{
+	display: block;
 	text-align: center;
+	padding: 80px 0;
+	background-color: rgb(0, 0, 0);
 }
-.hire .hire-button {
-	padding: 2rem 3rem;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.267);
-	font-size: 1.6rem;
+.skills h1{
+	font-size: 40px;
 	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: .2rem;
-	margin-top: 10px;
-	color: whitesmoke;
-	transition: .3s ease background-color;
+	letter-spacing: 2px;
+	color: rgb(255, 255, 255);
 }
-.hire .hire-button:hover {
-	background-color: black;
+.skills h3{
+	margin-bottom: 25px;
+   margin: 20px 0px 0px;
+   font-size: 20px;
+	text-align: left;
+   padding: 0 0px 0px 477px;
+	color: rgb(255, 255, 255);
 }
-/* End Hire Section  */
+.skills-container{
+	width: 50%;
+	background-color: #d2d7d3;
+	margin-left: 25%;
+	border-radius: 5px;
+}
+.skill{
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: white;
+	border-radius: 5px;
+}
+.skills-html{
+	width: 90%;
+	background-color: teal;
+}
+.skills-css{
+	width: 75%;
+	background-color: teal;
+}
+.skills-js{
+	width: 50%;
+	background-color: teal;
+}
+.skills-React{
+	width: 40%;
+	background-color: teal;
+}
+/* End Skills section */
 
 /* Footer section  */
 .footer {
@@ -387,26 +350,26 @@ html {
 	color: white;
 	flex-direction: column;
 	text-align: center;
-	padding: 5rem;
+	padding: 40px;
 }
 .footer-contact {
 	padding: 20px;
 }
 .footer-contact h1 {
-	font-size: 2.5rem;
+	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
 }
 .footer-contact p {
-	font-size: 1.4rem;
+	font-size: 15px;
 	padding-top: 10px;
-	letter-spacing: .2rem;
+	letter-spacing: 2px;
 }
 .footer-social-icon a {
 	color: white;
-	font-size: 3rem;
-	margin: .4rem;
+	font-size: 35px;
+	margin: 5px;
 	display: inline-block;
 }
 /* End Footer section  */
@@ -432,7 +395,7 @@ html {
 	.hero {
 		height: 100vh;
 		flex-direction: row;
-		padding-left: 10%;
+		padding-left: 50px;
 		justify-content: center;
 		align-items: center;
 	}
@@ -448,16 +411,6 @@ html {
 		min-width: 400px;
 		max-width: 1000px;
 	}
-	/* .about {
-		width: 80%;
-		margin: 0 auto;
-		flex-direction: row;
-	}
-	.about .about-info {
-		width: 50%;
-		text-align: left;
-		padding-right: 17rem;
-	} */
 	.Projects-header p {
 		max-width: 500px;
 		padding-top: 20px;
